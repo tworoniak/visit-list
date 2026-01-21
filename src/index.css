@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+/* Top Controls */
+.top-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.top-controls .filter {
+  flex: 1;
+}
+
+.top-controls .controls {
+  flex-shrink: 0;
+}
+
+/* Limit Select */
+.controls {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.75rem;
+}
+
+.controls label {
+  font-weight: bold;
+}
+
+.controls select {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: #ccc;
+  color: black;
+  border: none;
+}
+
+/* Filter Input */
+.filter {
+  margin-bottom: 2rem;
+}
+
+.filter input {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: none;
+  background: #ccc;
+  color: #000;
+  font-size: 1rem;
+}

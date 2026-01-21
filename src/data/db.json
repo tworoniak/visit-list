@@ -1,0 +1,52 @@
+{
+  "initialVisits": [
+    {
+      "id": 1,
+      "patient": "Clark",
+      "date": "2023-12-15",
+      "category": "A"
+    },
+    {
+      "id": 2,
+      "patient": "Sarah",
+      "date": "2026-01-15",
+      "category": "B"
+    },
+    {
+      "id": 3,
+      "patient": "Anthony",
+      "date": "2021-03-15",
+      "category": "A"
+    },
+    {
+      "id": 4,
+      "patient": "Thomas",
+      "date": "2024-12-15",
+      "category": "C"
+    },
+    {
+      "id": 5,
+      "patient": "James",
+      "date": "2022-01-15",
+      "category": "B"
+    },
+    {
+      "id": 6,
+      "patient": "Jessica",
+      "date": "2020-03-15",
+      "category": "A"
+    },
+    {
+      "id": 7,
+      "patient": "John",
+      "date": "2022-01-15",
+      "category": "B"
+    },
+    {
+      "id": 8,
+      "patient": "Alexandra",
+      "date": "1999-03-15",
+      "category": "A"
+    }
+  ]
+}
