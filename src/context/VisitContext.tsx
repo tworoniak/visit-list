@@ -15,7 +15,10 @@ export const VisitProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const fetchVisits = async () => {
       try {
-        const response = await fetch("http://localhost:4000/initialVisits");
+        const response = await fetch(
+          "https://json-server-vercel-visits.vercel.app/api/initialVisits",
+        );
+        // const response = await fetch("http://localhost:4000/initialVisits");
         if (!response.ok) {
           throw new Error("Network response was not ok!");
         }
