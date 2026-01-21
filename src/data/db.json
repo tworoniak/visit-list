@@ -2,51 +2,63 @@
   "initialVisits": [
     {
       "id": 1,
-      "patient": "Clark",
+      "patient": "Clark Kent",
       "date": "2023-12-15",
       "category": "A"
     },
     {
       "id": 2,
-      "patient": "Sarah",
+      "patient": "Natasha Romanoff",
       "date": "2026-01-15",
       "category": "B"
     },
     {
       "id": 3,
-      "patient": "Anthony",
+      "patient": "Anthony Stark",
       "date": "2021-03-15",
       "category": "A"
     },
     {
       "id": 4,
-      "patient": "Thomas",
+      "patient": "Thomas W",
       "date": "2024-12-15",
       "category": "C"
     },
     {
       "id": 5,
-      "patient": "James",
+      "patient": "Bruce Wayne",
       "date": "2022-01-15",
       "category": "B"
     },
     {
       "id": 6,
-      "patient": "Jessica",
+      "patient": "Jessica R",
       "date": "2020-03-15",
       "category": "A"
     },
     {
       "id": 7,
-      "patient": "John",
+      "patient": "Lex Luthor",
       "date": "2022-01-15",
       "category": "B"
     },
     {
       "id": 8,
-      "patient": "Alexandra",
+      "patient": "Alexandra Simpson",
       "date": "1999-03-15",
       "category": "A"
+    },
+    {
+      "id": 9,
+      "patient": "Lois Lane",
+      "date": "1998-04-15",
+      "category": "B"
+    },
+    {
+      "id": 10,
+      "patient": "Peter Parker",
+      "date": "1998-04-15",
+      "category": "B"
     }
   ]
 }

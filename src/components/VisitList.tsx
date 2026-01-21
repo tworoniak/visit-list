@@ -3,10 +3,10 @@ import { useState } from "react";
 import VisitItem from "./VisitItem";
 import FilterInput from "./FilterInput";
 import SortSelector from "./SortSelector";
-import { useVisits } from "../context/VisitContext";
+import { useGetVisitsQuery } from "../store/api/visitApi";
 
 const VisitList: React.FC = () => {
-  const { visits, loading, error } = useVisits();
+  const { data: visits = [], isLoading: loading, error } = useGetVisitsQuery();
   const [filter, setFilter] = useState("");
   const [sortBy, setSortBy] = useState("date_desc");
 
