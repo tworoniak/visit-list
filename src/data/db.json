@@ -16,37 +16,37 @@
       "id": 3,
       "patient": "Anthony Stark",
       "date": "2021-03-15",
-      "category": "A"
+      "category": "B"
     },
     {
       "id": 4,
       "patient": "Thomas W",
       "date": "2024-12-15",
-      "category": "C"
+      "category": "D"
     },
     {
       "id": 5,
       "patient": "Bruce Wayne",
       "date": "2022-01-15",
-      "category": "B"
+      "category": "A"
     },
     {
       "id": 6,
       "patient": "Jessica R",
       "date": "2020-03-15",
-      "category": "A"
+      "category": "C"
     },
     {
       "id": 7,
       "patient": "Lex Luthor",
       "date": "2022-01-15",
-      "category": "B"
+      "category": "A"
     },
     {
       "id": 8,
       "patient": "Alexandra Simpson",
       "date": "1999-03-15",
-      "category": "A"
+      "category": "C"
     },
     {
       "id": 9,
