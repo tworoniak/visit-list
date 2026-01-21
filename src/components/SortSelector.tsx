@@ -1,4 +1,9 @@
-const SortSelector = ({ sortBy, onSortChange }) => {
+interface SortSelectorProps {
+  sortBy: string;
+  onSortChange: (sortBy: string) => void;
+}
+
+const SortSelector: React.FC<SortSelectorProps> = ({ sortBy, onSortChange }) => {
   return (
     <div className='controls '>
       <label htmlFor='sort' className='text-gray-600'>

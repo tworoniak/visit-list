@@ -1,4 +1,9 @@
-const FilterInput = ({ filter, onFilterChange }) => {
+interface FilterInputProps {
+  filter: string;
+  onFilterChange: (filter: string) => void;
+}
+
+const FilterInput: React.FC<FilterInputProps> = ({ filter, onFilterChange }) => {
   return (
     <div className='filter w-full'>
       <input

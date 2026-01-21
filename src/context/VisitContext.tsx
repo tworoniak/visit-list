@@ -1,11 +1,16 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import type { Visit } from "../types";
 
-const VisitContext = createContext({ visits: [], loading: true, error: null });
+const VisitContext = createContext<{
+  visits: Visit[];
+  loading: boolean;
+  error: string | null;
+}>({ visits: [], loading: true, error: null });
 
 export const VisitProvider = ({ children }) => {
-  const [visits, setVisits] = useState([]);
+  const [visits, setVisits] = useState<Visit[]>([]);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchVisits = async () => {
