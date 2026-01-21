@@ -32,7 +32,16 @@ const VisitList: React.FC = () => {
       <SortSelector sortBy={sortBy} onSortChange={setSortBy} />
 
       {loading && <p>Loading visits...</p>}
-      {error && <div className='error'>Error: {error}</div>}
+      {error && (
+        <div className='error'>
+          Error:{" "}
+          {error && "status" in error
+            ? `${error.status}`
+            : error && "message" in error
+              ? error.message
+              : "An error occurred"}
+        </div>
+      )}
       {filteredVisits.length > 0 ? (
         filteredVisits.map((visit) => (
           <VisitItem key={visit.id} visit={visit} />
