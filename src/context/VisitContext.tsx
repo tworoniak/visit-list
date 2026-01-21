@@ -7,7 +7,7 @@ const VisitContext = createContext<{
   error: string | null;
 }>({ visits: [], loading: true, error: null });
 
-export const VisitProvider = ({ children }) => {
+export const VisitProvider = ({ children }: { children: React.ReactNode }) => {
   const [visits, setVisits] = useState<Visit[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -22,7 +22,7 @@ export const VisitProvider = ({ children }) => {
         const data = await response.json();
         setVisits(data);
       } catch (error) {
-        setError(error.message);
+        setError(error instanceof Error ? error.message : "An error occurred");
       } finally {
         setLoading(false);
       }
