@@ -2,11 +2,13 @@ import styles from "./FilterInput.module.scss";
 
 interface FilterInputProps {
   filter: string;
+  placeholder: string;
   onFilterChange: (filter: string) => void;
 }
 
 const FilterInput: React.FC<FilterInputProps> = ({
   filter,
+  placeholder,
   onFilterChange,
 }) => {
   return (
@@ -14,7 +16,7 @@ const FilterInput: React.FC<FilterInputProps> = ({
       <input
         type='text'
         name='filter'
-        placeholder='Filter patients by name...'
+        placeholder={placeholder}
         value={filter}
         onChange={(e) => onFilterChange(e.target.value)}
       />

@@ -5,12 +5,13 @@ interface SortSelectorProps {
   onSortChange: (sortBy: string) => void;
 }
 
-const SortSelector: React.FC<SortSelectorProps> = ({ sortBy, onSortChange }) => {
+const SortSelector: React.FC<SortSelectorProps> = ({
+  sortBy,
+  onSortChange,
+}) => {
   return (
     <div className={styles.controls}>
-      <label htmlFor='sort'>
-        Sort By:{" "}
-      </label>
+      <label htmlFor='sort'>Sort By: </label>
       <select
         id='sort'
         value={sortBy}
