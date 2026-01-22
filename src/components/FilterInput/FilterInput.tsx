@@ -5,13 +5,16 @@ interface FilterInputProps {
   onFilterChange: (filter: string) => void;
 }
 
-const FilterInput: React.FC<FilterInputProps> = ({ filter, onFilterChange }) => {
+const FilterInput: React.FC<FilterInputProps> = ({
+  filter,
+  onFilterChange,
+}) => {
   return (
     <div className={styles.filter}>
       <input
         type='text'
         name='filter'
-        placeholder='Filter patients...'
+        placeholder='Filter patients by name...'
         value={filter}
         onChange={(e) => onFilterChange(e.target.value)}
       />
