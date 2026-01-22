@@ -1,4 +1,4 @@
-import VisitList2 from "./components/VisitList2";
+import VisitList2 from "./components/VisitList/VisitList2";
 
 const App = () => {
   return (

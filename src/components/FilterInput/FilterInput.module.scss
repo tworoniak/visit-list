@@ -1,0 +1,30 @@
+.filter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #222324;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background: #ccc;
+
+    &::placeholder {
+      color: #28292b;
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+
+    &:hover:not(:focus) {
+      border-color: #9ca3af;
+    }
+  }
+}

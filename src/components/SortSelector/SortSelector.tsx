@@ -1,3 +1,5 @@
+import styles from "./SortSelector.module.scss";
+
 interface SortSelectorProps {
   sortBy: string;
   onSortChange: (sortBy: string) => void;
@@ -5,8 +7,8 @@ interface SortSelectorProps {
 
 const SortSelector: React.FC<SortSelectorProps> = ({ sortBy, onSortChange }) => {
   return (
-    <div className='controls '>
-      <label htmlFor='sort' className='text-gray-600'>
+    <div className={styles.controls}>
+      <label htmlFor='sort'>
         Sort By:{" "}
       </label>
       <select

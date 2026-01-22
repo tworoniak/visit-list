@@ -1,3 +1,5 @@
+import styles from "./FilterInput.module.scss";
+
 interface FilterInputProps {
   filter: string;
   onFilterChange: (filter: string) => void;
@@ -5,7 +7,7 @@ interface FilterInputProps {
 
 const FilterInput: React.FC<FilterInputProps> = ({ filter, onFilterChange }) => {
   return (
-    <div className='filter w-full'>
+    <div className={styles.filter}>
       <input
         type='text'
         name='filter'

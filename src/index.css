@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 /* Top Controls */
-.top-controls {
+/* .top-controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,10 +16,10 @@
 
 .top-controls .controls {
   flex-shrink: 0;
-}
+} */
 
 /* Limit Select */
-.controls {
+/* .controls {
   margin-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -37,10 +37,10 @@
   background: #ccc;
   color: black;
   border: none;
-}
+} */
 
 /* Filter Input */
-.filter {
+/* .filter {
   margin-bottom: 2rem;
 }
 
@@ -52,4 +52,4 @@
   background: #ccc;
   color: #000;
   font-size: 1rem;
-}
+} */
