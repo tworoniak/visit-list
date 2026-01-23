@@ -32,7 +32,7 @@ const VisitList: React.FC = () => {
       <FilterInput
         filter={filter}
         placeholder='Filter patients by name...'
-        onFilterChange={setFilter}
+        onChange={setFilter}
       />
 
       {loading && <Loader />}
@@ -59,6 +59,7 @@ const VisitList: React.FC = () => {
       {!loading && !error && filteredVisits.length === 0 && (
         <EmptyStateAnimation />
       )}
+
       <AnimatePresence mode='wait'>
         <motion.div layout className={styles.visit_list__content}>
           {!loading &&
